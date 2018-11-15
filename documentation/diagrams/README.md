@@ -10,6 +10,7 @@
 Диаграмма активности представляет собой следующую диаграмму: 
 
 ![Диаграмма активности](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/NewBookInLibrary.jpg)
+![Диаграмма активности](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/NewUser.jpg)
 
 
 ### 2. Диаграмма классов<a name="2"></a>
