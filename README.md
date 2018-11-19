@@ -1,4 +1,4 @@
-## <p align="center">MaB.app</p>![](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/Booking_Club.jpg)
+## <p align="center">Booking Club.app</p>![](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/Booking_Club.jpg)
 #### Приложение для чтения и разбора библии с возможностью оставлять комментарии к стихам и главам.
 • habr.com [(habr.com)](https://habr.com)
 
