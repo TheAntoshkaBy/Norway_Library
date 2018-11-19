@@ -9,40 +9,38 @@
 ### 1. Диаграмма активности<a name="1"></a>
 Диаграмма активности представляет собой следующую диаграмму: 
 
-![Диаграмма активности](https://github.com/Archeex/itNotes/blob/master/documentation/diagrams/images/ActivityDiagram.png)
+![Диаграмма активности](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/NewBookInLibrary.jpg)
+![Диаграмма активности](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/NewUser.jpg)
+
 
 ### 2. Диаграмма классов<a name="2"></a>
 Диаграмма классов представляет собой следующую диаграмму: 
 
-![Диаграмма классов](https://github.com/Archeex/itNotes/blob/master/documentation/diagrams/images/ClassesDiagram.png)
+![Диаграмма классов](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/PoslDi.jpg)
 
 ### 3. Диаграмма последовательности<a name="3"></a>
 Диаграмма последовательности представляет собой следующую диаграмму: 
 
-![Диаграмма последовательности](https://github.com/Archeex/itNotes/blob/master/documentation/diagrams/images/SequenceDiagram.png)
+![Диаграмма последовательности](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/PoslDi.jpg)
 
 ### 4. Диаграмма прецедентов<a name="4"></a>
 Диаграмма прецедентов представляет собой следующую диаграмму: 
 
-![Диаграмма прецедентов](https://github.com/Archeex/itNotes/blob/master/documentation/diagrams/images/UseCaseDiagram.png)
+![Диаграмма прецедентов](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/CaseDiagramm.jpg)
 
-### 5. Диаграмма развертывания<a name="5"></a>
-Диаграмма развертывания представляет собой следующую диаграмму: 
 
-![Диаграмма развертывания](https://github.com/Archeex/itNotes/blob/master/documentation/diagrams/images/DeploymentDiagram.png)
-
-### 6. Диаграмма состояний<a name="6"></a>
+### 5. Диаграмма состояний<a name="6"></a>
 Диаграмма состояний представляет собой следующую диаграмму: 
 
-![Диаграмма состояний](https://github.com/Archeex/itNotes/blob/master/documentation/diagrams/images/StatesDiagram.png)
+![Диаграмма состояний](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/StateDi.jpg)
 
-### 7. Поток событий<a name="7"></a>
-#### 7.1 Глоссарий
+### 6. Поток событий<a name="7"></a>
+#### 6.1 Глоссарий
 | Понятие | Описание |
 |:--|:--|
 | Пользователь | Человек, использующий приложение |
-#### 7.2 Варианты использования
-##### 7.2.1 Работа с библеотекой
+#### 6.2 Варианты использования
+##### 6.2.1 Работа с библеотекой
 
 1. Начало основного потока.
 2. Пользователь нажимает на кнопку перехода к интерфейсу обработки библеотеки.
@@ -52,14 +50,14 @@
 6. Возврат в главное меню.
 7. Конец основного потока.
 
-##### 7.2.2 Открыть полную версию новости в браузере
+##### 6.2.2 Открыть полную версию новости в браузере
 
 1. Начало основного потока.
 2. Пользователь нажимает на список прочитаных им книг.
 3. Вывод списка прочитанных и оставшихся книг для прочтения.
 4. Конец основного потока.
 
-##### 7.2.3 Перейти на главную страницу сайта-источника
+##### 6.2.3 Перейти на главную страницу сайта-источника
 
 1. Начало основного потока.
 2. Пользователь нажимает на список книг в библеотеке клуба.
