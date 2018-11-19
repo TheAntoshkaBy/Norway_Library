@@ -16,7 +16,7 @@
 ### 2. Диаграмма классов<a name="2"></a>
 Диаграмма классов представляет собой следующую диаграмму: 
 
-![Диаграмма классов](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/diagrams/images/PoslDi.jpg)
+![Диаграмма классов](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/ClassDi.jpg)
 
 ### 3. Диаграмма последовательности<a name="3"></a>
 Диаграмма последовательности представляет собой следующую диаграмму: 
