@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import sample.dataBaseWorkClasses.DbHandler;
+import sample.workedClasses.Users;
 
 
 public class RegistrationWin {
@@ -55,7 +56,17 @@ public class RegistrationWin {
 
         registration.setOnAction(event -> {
             DbHandler DbHandler = new DbHandler();
-            DbHandler.signUpUser(name.getText(),surname.getText(),logIn.getText(),nowBook.getText(),bookForClub.getText(),"man",password.getText());
+            String maleUs ="";
+            if(man.isSelected())
+            {
+                maleUs = "мужской";
+            }else{
+                maleUs = "женский";
+            }
+
+            Users users = new Users(name.getText(),surname.getText(),logIn.getText(),nowBook.getText(),bookForClub.getText(),maleUs,password.getText());
+
+            DbHandler.signUpUser(users);
         });
     }
 

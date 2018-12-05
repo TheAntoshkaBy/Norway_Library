@@ -1,5 +1,7 @@
 package sample.dataBaseWorkClasses;
 
+import sample.workedClasses.Users;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -32,7 +34,7 @@ public class DbHandler extends Configs{
         return dbConnection;
     }
 
-    public void signUpUser(String firstName,String surname,String login, String nowBook, String bookForClub,String male,String password)
+    public void signUpUser(Users user)
     {
         String insert = "INSERT INTO " + Const.USER_TABLE                   +     "(" +
                 Const.USER_NAME     +    ","  + Const.USER_SURNAME         +","+
@@ -44,20 +46,20 @@ public class DbHandler extends Configs{
         try {
             System.out.println(insert);
             PreparedStatement prSt = getDbConnection().prepareStatement(insert);
-            prSt.setString(1,firstName);
-            System.out.println(firstName);
-            prSt.setString(2,surname);
-            System.out.println(surname);
-            prSt.setString(3,login);
-            System.out.println(login);
-            prSt.setString(4,nowBook);
-            System.out.println(nowBook);
-            prSt.setString(5,bookForClub);
-            System.out.println(bookForClub);
-            prSt.setString(6,male);
-            System.out.println(male);
-            prSt.setString(7,password);
-            System.out.println(password);
+            prSt.setString(1,user.getName());
+            System.out.println(user.getName());
+            prSt.setString(2,user.getSurname());
+            System.out.println(user.getSurname());
+            prSt.setString(3,user.getLogin());
+            System.out.println(user.getLogin());
+            prSt.setString(4,user.getNowBook());
+            System.out.println(user.getNowBook());
+            prSt.setString(5,user.getBookForClub());
+            System.out.println(user.getBookForClub());
+            prSt.setString(6,user.getMale());
+            System.out.println(user.getMale());
+            prSt.setString(7,user.getPassword());
+            System.out.println(user.getPassword());
             prSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

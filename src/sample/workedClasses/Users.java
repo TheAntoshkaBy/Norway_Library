@@ -13,7 +13,16 @@ public class Users {
     private String male;
     private String password;
 
-
+    public Users(String names, String surnames, String logins, String nowBooks, String bookForClubs, String males, String passwords)
+    {
+        name = names;
+        surname = surnames;
+        login = logins;
+        nowBook = nowBooks;
+        bookForClub = bookForClubs;
+        male = males;
+        password = passwords;
+    }
     public String getName() {
         return name;
     }
