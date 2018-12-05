@@ -10,7 +10,7 @@ import sample.Main;
 
 import java.io.IOException;
 
-public class personWinController {
+public class PersonWinController {
 
     @FXML
     private Button readersList;
