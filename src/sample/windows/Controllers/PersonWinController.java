@@ -6,7 +6,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import sample.Main;
+import sample.animation.Shake;
+import sample.global.GlobalStatic;
 
 import java.io.IOException;
 
@@ -33,6 +34,7 @@ public class PersonWinController {
         });
 
         registration.setOnAction(event -> {
+            if(GlobalStatic.isAuhthorization){
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/sample/windows/FXML's/registrationWin.fxml"));
             try {
@@ -48,8 +50,42 @@ public class PersonWinController {
             scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/registrationWin.css").toExternalForm());
             stage.setScene(scene);
             stage.showAndWait();
+            }else{
+                Shake shake = new Shake(registration);
+                shake.play();
+            }
 
 
+        });
+
+        avtorization.setOnAction(event -> {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/sample/windows/FXML's/authorizationWin.fxml"));
+            try {
+                loader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Parent root = loader.getRoot();
+
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
+            scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/avtorize.css").toExternalForm());
+            stage.setScene(scene);
+            stage.showAndWait();
+
+
+        });
+
+        readersList.setOnAction(event -> {
+          /*  if(GlobalStatic.isAuhthorization){
+                System.out.println("SEEE");
+
+            }else{
+                Shake shake = new Shake(readersList);
+                shake.play();
+            }*/
         });
     }
 

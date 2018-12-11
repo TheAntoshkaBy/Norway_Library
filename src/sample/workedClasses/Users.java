@@ -23,6 +23,10 @@ public class Users {
         male = males;
         password = passwords;
     }
+    public Users()
+    {
+
+    }
     public String getName() {
         return name;
     }

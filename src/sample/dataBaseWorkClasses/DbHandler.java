@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.ResultSet;
 
 public class DbHandler extends Configs{
     Connection dbConnection;
@@ -66,5 +67,28 @@ public class DbHandler extends Configs{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public ResultSet getUser(Users user)
+    {
+        ResultSet resultSet = null;
+
+        String select = "SELECT * FROM " + Const.USER_TABLE + " WHERE " +
+                        Const.USER_LOGIN + "=? AND " + Const.USER_PASSWORD + "=?";
+
+        try{
+                PreparedStatement prSt = getDbConnection().prepareStatement(select);
+
+                prSt.setString(1,user.getLogin());
+                prSt.setString(2,user.getPassword());
+
+                resultSet = prSt.executeQuery();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+
+        return resultSet;
     }
 }

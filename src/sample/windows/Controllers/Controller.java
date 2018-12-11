@@ -55,7 +55,7 @@ public class Controller {
 
         });
         libraryWindow.setOnAction(event -> {
-            //newWinButton("/sample/windows/FXML's/libraryWindow.fxml",libraryWindow,"/sample/cssFiles/personWindow.css");
+
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/sample/windows/FXML's/personWindow.fxml"));
 
