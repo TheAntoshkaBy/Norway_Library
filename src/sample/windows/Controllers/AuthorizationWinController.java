@@ -1,12 +1,11 @@
 package sample.windows.Controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import sample.animation.Shake;
 import sample.dataBaseWorkClasses.DbHandler;
 import sample.global.GlobalStatic;
-import sample.workedClasses.Users;
+import sample.workedClasses.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -52,7 +51,7 @@ public class AuthorizationWinController {
 
     private void loginUser(String login, String pass) throws SQLException {
         DbHandler dbHandler = new DbHandler();
-        Users user = new Users();
+        User user = new User();
         user.setLogin(login);
         user.setPassword(pass);
         ResultSet resultSet = dbHandler.getUser(user);

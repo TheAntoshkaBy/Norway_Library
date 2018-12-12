@@ -1,6 +1,6 @@
 package sample.dataBaseWorkClasses;
 
-import sample.workedClasses.Users;
+import sample.workedClasses.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -35,7 +35,7 @@ public class DbHandler extends Configs{
         return dbConnection;
     }
 
-    public void signUpUser(Users user)
+    public void signUpUser(User user)
     {
         String insert = "INSERT INTO " + Const.USER_TABLE                   +     "(" +
                 Const.USER_NAME     +    ","  + Const.USER_SURNAME         +","+
@@ -69,7 +69,7 @@ public class DbHandler extends Configs{
         }
     }
 
-    public ResultSet getUser(Users user)
+    public ResultSet getUser(User user)
     {
         ResultSet resultSet = null;
 
@@ -83,6 +83,25 @@ public class DbHandler extends Configs{
                 prSt.setString(2,user.getPassword());
 
                 resultSet = prSt.executeQuery();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+
+        return resultSet;
+    }
+
+    public ResultSet getAll()
+    {
+        ResultSet resultSet = null;
+
+        String select = "SELECT * FROM " + Const.USER_TABLE ;
+
+        try{
+            PreparedStatement prSt = getDbConnection().prepareStatement(select);
+
+            resultSet = prSt.executeQuery();
         }catch (SQLException e){
             e.printStackTrace();
         }catch (ClassNotFoundException e){

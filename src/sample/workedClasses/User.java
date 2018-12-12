@@ -2,8 +2,9 @@ package sample.workedClasses;
 
 import java.sql.Date;
 
-public class Users {
+public class User {
 
+    private int id;
     private String name;
     private String surname;
     private String login;
@@ -13,7 +14,7 @@ public class Users {
     private String male;
     private String password;
 
-    public Users(String names, String surnames, String logins, String nowBooks, String bookForClubs, String males, String passwords)
+    public User( String names, String surnames, String logins, String nowBooks, String bookForClubs, String males, String passwords)
     {
         name = names;
         surname = surnames;
@@ -23,10 +24,15 @@ public class Users {
         male = males;
         password = passwords;
     }
-    public Users()
+    public User()
     {
 
     }
+
+    public int getId(){return id;}
+
+    public void setId(int id){this.id = id;}
+
     public String getName() {
         return name;
     }
