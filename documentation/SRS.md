@@ -28,7 +28,17 @@ Booking club - это десктопное приложение, предста�
 Приложение использует базу данных MySQL.
 ### <a name="P2.1">2.1.1 Программные интерфейсы</a>
 Основное меню.<br>
-![]( https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/Booking_Club.jpg)
+![]( https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/Booking_Club.jpg)<br>
+Меню учета участников.
+![](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/menuUsers.jpg)<br>
+Меню регистрации.
+![](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/registr.jpg)<br>
+Меню авторизации.
+![](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/autorize.jpg)<br>
+Список участников.
+![](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/usersList.jpg)<br>
+Меню библиотеки.
+![](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/images/menuBib.jpg)<br>
 ### <a name="P2.2">2.2. Характеристики пользователей</a>
 #### <a name="P2.2.1">2.2.1. Аудитория приложения</a>
 Пользователями являются администраторы/модераторы выше названного клуба.
