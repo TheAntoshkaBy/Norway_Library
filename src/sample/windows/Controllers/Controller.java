@@ -57,7 +57,7 @@ public class Controller {
         libraryWindow.setOnAction(event -> {
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/windows/FXML's/personWindow.fxml"));
+            loader.setLocation(getClass().getResource("/sample/windows/FXML's/libraryWin.fxml"));
 
             try {
                 loader.load();

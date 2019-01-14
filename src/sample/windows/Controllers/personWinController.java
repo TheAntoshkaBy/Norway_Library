@@ -86,6 +86,22 @@ public class PersonWinController {
                 Shake shake = new Shake(readersList);
                 shake.play();
             }*/
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/sample/windows/FXML's/readersWin.fxml"));
+            try {
+                loader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Parent root = loader.getRoot();
+
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
+            scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/readerList.css").toExternalForm());
+            stage.setScene(scene);
+            stage.showAndWait();
         });
     }
 

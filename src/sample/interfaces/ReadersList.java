@@ -1,5 +1,7 @@
 package sample.interfaces;
 
+
+
 import sample.workedClasses.User;
 
 public interface ReadersList {

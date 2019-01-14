@@ -1,0 +1,14 @@
+#Welcome {
+    -fx-font-size: 32px;
+    -fx-font-family: "Impact";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.button {
+    -fx-text-fill: #818181;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.root {
+    -fx-background-image: url(list.jpg);
+}

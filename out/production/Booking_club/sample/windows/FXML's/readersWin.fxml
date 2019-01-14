@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="965.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.readersWinController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="147.0" prefHeight="789.0" prefWidth="867.0">
+         <children>
+            <TableView fx:id="table" layoutX="131.0" layoutY="20.0" prefHeight="654.0" prefWidth="621.0">
+              <columns>
+                <TableColumn fx:id="surname" prefWidth="176.0" text="Фамилия" />
+                <TableColumn fx:id="name" prefWidth="130.0" text="Имя" />
+                  <TableColumn fx:id="login" minWidth="4.0" prefWidth="120.0" text="Логин" />
+                  <TableColumn fx:id="nowBook" prefWidth="136.0" text="Читаемая книга" />
+                  <TableColumn fx:id="Male" minWidth="2.0" prefWidth="58.0" text="Пол" />
+              </columns>
+            </TableView>
+            <Label fx:id="label" layoutX="120.0" layoutY="744.0" prefHeight="35.0" prefWidth="199.0" text="Участников: ">
+               <font>
+                  <Font name="Arimo" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="out" layoutX="700.0" layoutY="749.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Выход" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

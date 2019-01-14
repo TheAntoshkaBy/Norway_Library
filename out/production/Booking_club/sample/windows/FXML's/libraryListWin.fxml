@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="965.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.libraryListController">
+    <children>
+        <AnchorPane layoutX="-2.0" layoutY="147.0" prefHeight="789.0" prefWidth="867.0">
+            <children>
+                <TableView fx:id="table" layoutX="131.0" layoutY="20.0" prefHeight="654.0" prefWidth="621.0">
+                    <columns>
+                        <TableColumn fx:id="name" prefWidth="303.0" text="Книга" />
+                        <TableColumn fx:id="author" prefWidth="317.0" text="Автор" />
+                    </columns>
+                </TableView>
+                <Label fx:id="label" layoutX="120.0" layoutY="744.0" prefHeight="35.0" prefWidth="199.0" text="Участников: ">
+                    <font>
+                        <Font name="Arimo" size="15.0" />
+                    </font>
+                </Label>
+                <Button fx:id="out" layoutX="700.0" layoutY="749.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Выход" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

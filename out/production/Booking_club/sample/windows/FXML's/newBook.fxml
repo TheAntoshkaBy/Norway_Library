@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.newBookController">
+   <children>
+      <TextField fx:id="name" layoutX="47.0" layoutY="32.0" prefHeight="25.0" prefWidth="326.0" text="название книги:" />
+      <TextField fx:id="author" layoutX="47.0" layoutY="85.0" prefHeight="25.0" prefWidth="326.0" text="автор:" />
+      <Button fx:id="Ok" layoutX="388.0" layoutY="32.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="OK" />
+      <Button fx:id="Cancel" layoutX="388.0" layoutY="85.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -12,4 +12,9 @@ public class Const
     public static final String USER_MALE = "male";
     public static final String USER_PASSWORD = "password";
 
+    public static final String BOOKING_TABLE = "books";
+    public static final String BOOKING_NAME = "name";
+    public static final String BOOKING_AUTHOR_NAME = "author";
+
+
 }

@@ -1,5 +1,6 @@
 package sample.dataBaseWorkClasses;
 
+import sample.workedClasses.Book;
 import sample.workedClasses.User;
 
 import java.sql.Connection;
@@ -35,6 +36,7 @@ public class DbHandler extends Configs{
         return dbConnection;
     }
 
+
     public void signUpUser(User user)
     {
         String insert = "INSERT INTO " + Const.USER_TABLE                   +     "(" +
@@ -43,6 +45,7 @@ public class DbHandler extends Configs{
                 Const.USER_NOW_BOOK +    ","  + Const.USER_BOOK_FOR_CLUB   +","+
                 Const.USER_MALE     +    ","  + Const.USER_PASSWORD         +     ")" +
                 "VALUES(?,?,?,?,?,?,?)";
+        System.out.println(insert);
 
         try {
             System.out.println(insert);
@@ -92,11 +95,52 @@ public class DbHandler extends Configs{
         return resultSet;
     }
 
+    public void newBook(Book book){
+
+        String insert = "INSERT INTO " + Const.BOOKING_TABLE                   +     "(" +
+                Const.BOOKING_NAME    +    ","  + Const.BOOKING_AUTHOR_NAME         + ")" +
+                "VALUES(?,?)";
+
+        System.out.println(insert);
+        PreparedStatement prSt = null;
+        try {
+            prSt = getDbConnection().prepareStatement(insert);
+
+            prSt.setString(1,book.getNameBook());
+            System.out.println(book.getNameBook());
+            prSt.setString(2,book.getAuthor());
+            prSt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
+
     public ResultSet getAll()
     {
         ResultSet resultSet = null;
 
         String select = "SELECT * FROM " + Const.USER_TABLE ;
+
+        try{
+            PreparedStatement prSt = getDbConnection().prepareStatement(select);
+            resultSet = prSt.executeQuery();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+
+        return resultSet;
+    }
+
+    public ResultSet getAllBooks()
+    {
+        ResultSet resultSet = null;
+
+        String select = "SELECT * FROM " + Const.BOOKING_TABLE ;
 
         try{
             PreparedStatement prSt = getDbConnection().prepareStatement(select);
