@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Booking_club:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Booking_club_jar</output-path>
+    <root id="archive" name="Booking_club.jar">
+      <element id="module-output" name="Booking_club" />
+      <element id="extracted-dir" path="F:/mysql/mysql-connector-java-8.0.13.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
