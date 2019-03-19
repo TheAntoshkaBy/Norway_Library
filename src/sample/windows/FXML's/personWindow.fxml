@@ -3,7 +3,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1110.0" style="-fx-background-color: #A52A2A;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.personWinController">
+
    <children>
       <Button fx:id="registration" layoutX="437.0" layoutY="324.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="236.0" text="Регистрация" />
       <Button fx:id="readersList" layoutX="437.0" layoutY="263.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="236.0" text="Список читателей" />
