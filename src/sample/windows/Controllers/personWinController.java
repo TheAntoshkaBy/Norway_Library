@@ -11,7 +11,7 @@ import sample.global.GlobalStatic;
 
 import java.io.IOException;
 
-public class PersonWinController {
+public class personWinController {
 
     @FXML
     private Button readersList;
