@@ -190,7 +190,14 @@ public class DbHandler extends Configs{
                 Const.USER_MALE            +    " = "  + user.getMale()        +
                 Const.USER_PASSWORD        +    " = "  + user.getPassword()    ;
 
-        PreparedStatement preparedStatement = getDbConnection().prepareStatement(update);
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = getDbConnection().prepareStatement(update);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         try {
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
