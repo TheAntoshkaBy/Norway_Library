@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.newBookController">
+    <children>
+        <Button fx:id="Ok" layoutX="166.0" layoutY="90.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="OK" />
+      <TextArea fx:id="Text" layoutX="9.0" layoutY="7.0" prefHeight="77.0" prefWidth="394.0" />
+    </children>
+</AnchorPane>

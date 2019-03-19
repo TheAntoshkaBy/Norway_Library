@@ -2,6 +2,7 @@ package sample.windows.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import sample.dataBaseWorkClasses.DbHandler;
 import sample.workedClasses.Book;
@@ -42,8 +43,5 @@ public class newBookController {
            dbHandler.newBook(book);
 
         });
-
     }
-
-
 }

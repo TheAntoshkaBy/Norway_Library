@@ -1,5 +1,7 @@
 package sample.dataBaseWorkClasses;
 
+import sample.windows.Controllers.AlertWindowController;
+import sample.windows.Controllers.Controller;
 import sample.workedClasses.Book;
 import sample.workedClasses.User;
 
@@ -11,6 +13,8 @@ import java.sql.ResultSet;
 
 public class DbHandler extends Configs{
     Connection dbConnection;
+    Controller controller=new Controller();
+    AlertWindowController text = new AlertWindowController();
 
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
 
@@ -67,6 +71,7 @@ public class DbHandler extends Configs{
             prSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+          //  controller.newWinButton();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
