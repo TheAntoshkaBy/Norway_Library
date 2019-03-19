@@ -45,14 +45,15 @@ public class RegistrationWin {
     @FXML
     private Button out;
 
+    @FXML
+    private Controller controller = new Controller();
 
-
+    @FXML
+    private AlertWindowController text = new AlertWindowController();
 
     @FXML
     void initialize() {
-        out.setOnAction(event -> {
-            out.getScene().getWindow().hide();
-        });
+        out.setOnAction(event -> controller.newWinButton("/sample/windows/FXML's/personWindow.fxml", out, "/sample/cssFiles/personWindow.css",1));
 
         registration.setOnAction(event -> {
             DbHandler DbHandler = new DbHandler();
@@ -67,6 +68,8 @@ public class RegistrationWin {
             User user = new User(name.getText(),surname.getText(),logIn.getText(),nowBook.getText(),bookForClub.getText(),maleUs,password.getText());
 
             DbHandler.signUpUser(user);
+            if(DbHandler.getFlag()==0) controller.newWinButton("/sample/windows/FXML's/alertWindow.fxml", registration, "/sample/cssFiles/personWindow.css", 0);
+            else controller.newWinButton("/sample/windows/FXML's/ErrorWindow.fxml", registration, "/sample/cssFiles/personWindow.css", 0);
         });
     }
 

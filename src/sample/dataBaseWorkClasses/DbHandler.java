@@ -1,5 +1,7 @@
 package sample.dataBaseWorkClasses;
 
+import sample.windows.Controllers.AlertWindowController;
+import sample.windows.Controllers.Controller;
 import sample.workedClasses.Book;
 import sample.workedClasses.User;
 
@@ -11,6 +13,15 @@ import java.sql.ResultSet;
 
 public class DbHandler extends Configs{
     Connection dbConnection;
+    static int flag=0;
+
+    public static int getFlag() {
+        return flag;
+    }
+
+    public static void resetFlag(){
+        flag=0;
+    };
 
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
 
@@ -29,9 +40,11 @@ public class DbHandler extends Configs{
         dbConnection = DriverManager.getConnection(connectionString,dbUser,dbPass);
         if (!dbConnection.isClosed()) {
             System.out.println("Соединение с БД установлено");
+            flag=0;
         }
     }catch (SQLException e) {
         System.out.println("Не удалось загрузить класс драйвера");
+            flag=1;
     }
         return dbConnection;
     }
@@ -67,8 +80,10 @@ public class DbHandler extends Configs{
             prSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+            flag=1;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            flag=1;
         }
     }
 
@@ -88,8 +103,10 @@ public class DbHandler extends Configs{
                 resultSet = prSt.executeQuery();
         }catch (SQLException e){
             e.printStackTrace();
+            flag=1;
         }catch (ClassNotFoundException e){
             e.printStackTrace();
+            flag=1;
         }
 
         return resultSet;
@@ -112,13 +129,15 @@ public class DbHandler extends Configs{
             prSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+            flag=1;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            flag=1;
         }
 
     }
 
-    public ResultSet getAll()
+    public ResultSet getAll()//всех юзеров
     {
         ResultSet resultSet = null;
 
@@ -129,8 +148,10 @@ public class DbHandler extends Configs{
             resultSet = prSt.executeQuery();
         }catch (SQLException e){
             e.printStackTrace();
+            flag=1;
         }catch (ClassNotFoundException e){
             e.printStackTrace();
+            flag=1;
         }
 
         return resultSet;
@@ -148,10 +169,65 @@ public class DbHandler extends Configs{
             resultSet = prSt.executeQuery();
         }catch (SQLException e){
             e.printStackTrace();
+            flag=1;
         }catch (ClassNotFoundException e){
             e.printStackTrace();
+            flag=1;
         }
 
         return resultSet;
+    }
+
+    public void deleteUser(Const tableName, Const param)
+    {
+        String delete = "DELETE FROM " + tableName + " WHERE " + param + "VALUES(?)";
+        System.out.println(delete);
+
+        PreparedStatement prStr = null;
+
+        try {
+            prStr.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            prStr = getDbConnection().prepareStatement(delete);
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void ChangeDataAboutUser(User user)
+    {
+        String update = "UPDATE " + Const.USER_TABLE   +     " SET "           +
+                Const.USER_NAME            +    " = "  + user.getName()        +
+                Const.USER_SURNAME         +    " = "  + user.getSurname()     +
+                Const.USER_LOGIN           +    " = "  + user.getLogin()       +
+                Const.USER_NOW_BOOK        +    " = "  + user.getNowBook()     +
+                Const.USER_BOOK_FOR_CLUB   +    " = "  + user.getBookForClub() +
+                Const.USER_MALE            +    " = "  + user.getMale()        +
+                Const.USER_PASSWORD        +    " = "  + user.getPassword()    ;
+
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = getDbConnection().prepareStatement(update);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            flag=1;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            flag=1;
+        }
+        try {
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            flag=1;
+        }
     }
 }

@@ -12,9 +12,10 @@ import java.io.IOException;
 
 public class Controller {
 
-    public void newWinButton(String fxmlPatch, Button button, String cssPatch)
+    public void newWinButton(String fxmlPatch, Button button, String cssPatch, int hideFlag)
     {
-        //button.getScene().getWindow().hide();
+        if(hideFlag==1)
+        button.getScene().getWindow().hide();
 
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmlPatch));
@@ -33,7 +34,7 @@ public class Controller {
         scene.getStylesheets().add(getClass().getResource(cssPatch).toExternalForm());
 
         stage.setScene(scene);
-        stage.showAndWait();
+        stage.show();
     }
 
 
@@ -50,30 +51,8 @@ public class Controller {
 
     @FXML
     void initialize(){
-        personWindow.setOnAction(event -> {
-            newWinButton("/sample/windows/FXML's/personWindow.fxml",personWindow, "/sample/cssFiles/personWindow.css");
-
-        });
-        libraryWindow.setOnAction(event -> {
-
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/windows/FXML's/libraryWin.fxml"));
-
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            Scene scene = new Scene(root);
-            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
-                scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/personWindow.css").toExternalForm());
-
-            stage.setScene(scene);
-            stage.showAndWait();
-        });
+        personWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/personWindow.fxml", personWindow, "/sample/cssFiles/personWindow.css", 1));
+        libraryWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/libraryWin.fxml", personWindow, "/sample/cssFiles/personWindow.css", 1));
     }
 
 
