@@ -13,8 +13,15 @@ import java.sql.ResultSet;
 
 public class DbHandler extends Configs{
     Connection dbConnection;
-    Controller controller=new Controller();
-    AlertWindowController text = new AlertWindowController();
+    static int flag=0;
+
+    public static int getFlag() {
+        return flag;
+    }
+
+    public static void resetFlag(){
+        flag=0;
+    };
 
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
 
@@ -33,9 +40,11 @@ public class DbHandler extends Configs{
         dbConnection = DriverManager.getConnection(connectionString,dbUser,dbPass);
         if (!dbConnection.isClosed()) {
             System.out.println("Соединение с БД установлено");
+            flag=0;
         }
     }catch (SQLException e) {
         System.out.println("Не удалось загрузить класс драйвера");
+            flag=1;
     }
         return dbConnection;
     }
@@ -74,6 +83,7 @@ public class DbHandler extends Configs{
           //  controller.newWinButton();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            flag=1;
         }
     }
 
@@ -93,8 +103,10 @@ public class DbHandler extends Configs{
                 resultSet = prSt.executeQuery();
         }catch (SQLException e){
             e.printStackTrace();
+            flag=1;
         }catch (ClassNotFoundException e){
             e.printStackTrace();
+            flag=1;
         }
 
         return resultSet;
@@ -117,8 +129,10 @@ public class DbHandler extends Configs{
             prSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+            flag=1;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            flag=1;
         }
 
     }
@@ -134,8 +148,10 @@ public class DbHandler extends Configs{
             resultSet = prSt.executeQuery();
         }catch (SQLException e){
             e.printStackTrace();
+            flag=1;
         }catch (ClassNotFoundException e){
             e.printStackTrace();
+            flag=1;
         }
 
         return resultSet;
@@ -153,8 +169,10 @@ public class DbHandler extends Configs{
             resultSet = prSt.executeQuery();
         }catch (SQLException e){
             e.printStackTrace();
+            flag=1;
         }catch (ClassNotFoundException e){
             e.printStackTrace();
+            flag=1;
         }
 
         return resultSet;
@@ -200,13 +218,16 @@ public class DbHandler extends Configs{
             preparedStatement = getDbConnection().prepareStatement(update);
         } catch (SQLException e) {
             e.printStackTrace();
+            flag=1;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            flag=1;
         }
         try {
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+            flag=1;
         }
     }
 }

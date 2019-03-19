@@ -14,16 +14,12 @@ public class AlertWindowController {
     private javafx.scene.control.Button Ok;
 
     @FXML
-    private TextArea Text;
+    private Label Text;
 
     @FXML
     void initialize()
     {
         Ok.setOnAction(event -> Ok.getScene().getWindow().hide());
-    }
-
-    void setText(String text){
-        Text.setText(text);
     }
 }
 

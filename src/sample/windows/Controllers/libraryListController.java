@@ -36,6 +36,8 @@ public class libraryListController {
     void initialize() {
         out.setOnAction(event -> {
             out.getScene().getWindow().hide();
+            Controller controller = new Controller();
+            controller.newWinButton("/sample/windows/FXML's/libraryWin.fxml", out, "/sample/cssFiles/personWindow.css",1);
         });
 
         name.setCellValueFactory(new PropertyValueFactory<Book, String>("nameBook"));
