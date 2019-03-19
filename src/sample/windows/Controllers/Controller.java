@@ -14,7 +14,7 @@ public class Controller {
 
     public void newWinButton(String fxmlPatch, Button button, String cssPatch)
     {
-        //button.getScene().getWindow().hide();
+        button.getScene().getWindow().hide();
 
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmlPatch));
@@ -33,7 +33,7 @@ public class Controller {
         scene.getStylesheets().add(getClass().getResource(cssPatch).toExternalForm());
 
         stage.setScene(scene);
-        stage.showAndWait();
+        stage.show();
     }
 
 
@@ -50,32 +50,8 @@ public class Controller {
 
     @FXML
     void initialize(){
-        personWindow.setOnAction(event -> {
-            newWinButton("/sample/windows/FXML's/personWindow.fxml",personWindow, "/sample/cssFiles/personWindow.css");
-            personWindow.getScene().getWindow().hide();
-
-        });
-        libraryWindow.setOnAction(event -> {
-            libraryWindow.getScene().getWindow().hide();
-
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/windows/FXML's/libraryWin.fxml"));
-
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            Scene scene = new Scene(root);
-            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
-                scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/personWindow.css").toExternalForm());
-
-            stage.setScene(scene);
-            stage.showAndWait();
-        });
+        personWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/personWindow.fxml", personWindow, "/sample/cssFiles/personWindow.css"));
+        libraryWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/libraryWin.fxml", personWindow, "/sample/cssFiles/personWindow.css"));
     }
 
 
