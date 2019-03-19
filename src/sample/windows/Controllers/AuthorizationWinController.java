@@ -24,11 +24,15 @@ public class AuthorizationWinController {
     private Button out;
 
     @FXML
+    private Controller button = new Controller();
+
+    @FXML
+    private AlertWindowController text = new AlertWindowController();
+
+    @FXML
     void initialize(){
 
-        out.setOnAction(event -> {
-            out.getScene().getWindow().hide();
-        });
+        out.setOnAction(event -> button.newWinButton("/sample/windows/FXML's/personWindow.fxml", out, "/sample/cssFiles/personWindow.css",1));
 
         input.setOnAction(event -> {
 
@@ -43,6 +47,7 @@ public class AuthorizationWinController {
                     e.printStackTrace();
                 }
             }else {
+                button.newWinButton("/sample/windows/FXML's/ErrorWindow.fxml", input, "/sample/cssFiles/personWindow.css", 0);
                 System.out.println("Empty");
             }
 
@@ -61,11 +66,10 @@ public class AuthorizationWinController {
             counter++;
         }
         if(counter>=1){
-            System.out.println("Yahooo");
+            button.newWinButton("/sample/windows/FXML's/alertWindow.fxml", input, "/sample/cssFiles/personWindow.css", 0);
             GlobalStatic.isAuhthorization = true;
-            input.getScene().getWindow().hide();
-
         }else{
+            button.newWinButton("/sample/windows/FXML's/ErrorWindow.fxml", input, "/sample/cssFiles/personWindow.css", 0);
             System.out.println("Error");
             Shake loginShake = new Shake(this.login);
             Shake passShake = new Shake(password);
