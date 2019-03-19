@@ -80,7 +80,7 @@ public class DbHandler extends Configs{
             prSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-          //  controller.newWinButton();
+            flag=1;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             flag=1;

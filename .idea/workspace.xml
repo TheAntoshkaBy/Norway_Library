@@ -6,20 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_14.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booking_club.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Booking_club.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Booking_club_jar/Booking_club.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Booking_club_jar/Booking_club.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Booking_club/sample/dataBaseWorkClasses/Configs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Booking_club/sample/dataBaseWorkClasses/Configs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/Controllers/personWinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/Controllers/personWinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/FXML's/personWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/FXML's/personWindow.fxml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="The alert windows were added.">
+      <change beforePath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/FXML's/readersWin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/FXML's/readersWin.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Configs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/windows/FXML's/libraryWin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/FXML's/libraryWin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml" afterDir="false" />
+    </list>
+    <list id="ab108120-b0fc-4c37-a319-b8d53c84b115" name="changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Booking_club_jar/Booking_club.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Booking_club_jar/Booking_club.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/FXML's/authorizationWin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Booking_club/sample/windows/FXML's/authorizationWin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,65 +89,74 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/ErrorWindow.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="204">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Const.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/alertWindow.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/RegistrationWin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="127" column="80" lean-forward="true" selection-start-line="127" selection-start-column="80" selection-end-line="127" selection-end-column="80" />
+            <state relative-caret-position="349">
+              <caret line="71" column="138" selection-start-line="70" selection-start-column="11" selection-end-line="71" selection-end-column="138" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/newBookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getDbConnection#0;class#DbHandler#0" />
-                <element signature="method#getUser#0;class#DbHandler#0" />
-                <element signature="method#newBook#0;class#DbHandler#0" />
-                <element signature="method#getAllBooks#0;class#DbHandler#0" />
-                <element signature="method#deleteUser#0;class#DbHandler#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/AlertWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="230">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/sample.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/AuthorizationWinController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/registrationWin.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="252">
+              <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -161,36 +165,27 @@
         <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/libraryListWin.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/readersWin.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/libraryWin.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/global/GlobalStatic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Configs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -228,18 +223,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml" />
         <option value="$PROJECT_DIR$/src/sample/cssFiles/css/personWindow.css" />
         <option value="$PROJECT_DIR$/src/sample/cssFiles/css/mainWindow.css" />
         <option value="$PROJECT_DIR$/src/sample/cssFiles/personWindow.css" />
         <option value="$PROJECT_DIR$/src/sample/cssFiles/mainWindow.css" />
         <option value="$PROJECT_DIR$/src/sample/cssFiles/registrationWin.css" />
-        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/registrationWin.fxml" />
         <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Config.java" />
         <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/dbHandler.java" />
         <option value="$PROJECT_DIR$/src/sample/windows/Controllers/registrationWin.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/RegistrationWin.java" />
         <option value="$PROJECT_DIR$/src/sample/windows/FXML's/autorizationWin.fxml" />
         <option value="$PROJECT_DIR$/src/sample/windows/Controllers/AutorisationWinController.java" />
         <option value="$PROJECT_DIR$/src/sample/cssFiles/avtorize.css" />
@@ -247,12 +238,10 @@
         <option value="$PROJECT_DIR$/src/sample/animation/Shake.java" />
         <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/GlobalStatic.java" />
         <option value="$PROJECT_DIR$/src/sample/global/GlobalStatic.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/AuthorizationWinController.java" />
         <option value="$PROJECT_DIR$/src/sample/workedClasses/Users.java" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/DbReaderList.java" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/interfaces/DbReaderList.java" />
         <option value="$PROJECT_DIR$/src/sample/workedClasses/User.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/readersWin.fxml" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/impl/impl/DbReaderList.java" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/impl/ReadersList.java" />
         <option value="$PROJECT_DIR$/src/sample/cssFiles/readerList.css" />
@@ -261,19 +250,29 @@
         <option value="$PROJECT_DIR$/src/sample/interfaces/BookingList.java" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/impl/DbReaderList.java" />
         <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Const.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/Controller.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/libraryListWin.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/impl/DbBookingList.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/libraryListController.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/LibraryWinController.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/newBook.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/newBookController.java" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/ReadersList.java" />
-        <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java" />
-        <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Configs.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java" />
         <option value="$PROJECT_DIR$/src/sample/windows/FXML's/libraryWin.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/LibraryWinController.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/registrationWin.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/authorizationWin.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/newBook.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/libraryListController.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/AlertWindowController.java" />
+        <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/RegistrationWin.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/newBookController.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/alertWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/ErrorWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/AuthorizationWinController.java" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/libraryListWin.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/FXML's/readersWin.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Configs.java" />
       </list>
     </option>
   </component>
@@ -325,7 +324,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -337,6 +335,12 @@
               <item name="Boking-Club" type="58d84e3e:PackageViewProjectNode" />
               <item name="Booking_club" type="616d4139:PackageViewModuleNode" />
               <item name="sample" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Boking-Club" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Booking_club" type="616d4139:PackageViewModuleNode" />
+              <item name="sample" type="1f31426a:PackageElementNode" />
+              <item name="cssFiles" type="1f31426a:PackageElementNode" />
             </path>
             <path>
               <item name="Boking-Club" type="58d84e3e:PackageViewProjectNode" />
@@ -429,6 +433,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,7 +446,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552981325707" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552999082699" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="D:/sql/mysql-connector-java-8.0.14/mysql-connector-java-8.0.14.jar!/" />
@@ -553,6 +558,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <changelist id="ab108120-b0fc-4c37-a319-b8d53c84b115" name="changelist" comment="" />
       <created>1359379246138</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -601,7 +607,98 @@
       <option name="project" value="LOCAL" />
       <updated>1543945245539</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The composition of the library window was changed.">
+      <created>1552981416404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552981416405</updated>
+    </task>
+    <task id="LOCAL-00003" summary="The composition of the person window was changed.">
+      <created>1552981678428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552981678428</updated>
+    </task>
+    <task id="LOCAL-00004" summary="A switching between the main window and the library window was added.">
+      <created>1552982012294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552982012294</updated>
+    </task>
+    <task id="LOCAL-00005" summary="The solution of a problem &quot;Copy and paste programming&quot; in the Controller was solved.">
+      <created>1552983362909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552983362909</updated>
+    </task>
+    <task id="LOCAL-00006" summary="The solution of a problem &quot;Copy and paste programming&quot; in the LibraryWinController was solved.">
+      <created>1552983658611</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552983658611</updated>
+    </task>
+    <task id="LOCAL-00007" summary="The function newWinButton() was optimized.">
+      <created>1552984341003</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552984341003</updated>
+    </task>
+    <task id="LOCAL-00008" summary="The problem @Copy and paste programming&quot; in personWinController was solved.">
+      <created>1552984815924</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552984815924</updated>
+    </task>
+    <task id="LOCAL-00009" summary="The switching between the readers window and the registration window was added.">
+      <created>1552985053322</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1552985053322</updated>
+    </task>
+    <task id="LOCAL-00010" summary="The switching between the readers window and the authorization window was added.">
+      <created>1552985087944</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552985087944</updated>
+    </task>
+    <task id="LOCAL-00011" summary="The composition of the registration window and of the authorization window was changed.">
+      <created>1552985397688</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1552985397689</updated>
+    </task>
+    <task id="LOCAL-00012" summary="he hiding of characters in password fields was added.">
+      <created>1552987055717</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1552987055717</updated>
+    </task>
+    <task id="LOCAL-00013" summary="The alert window was created.">
+      <created>1552989568167</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1552989568167</updated>
+    </task>
+    <task id="LOCAL-00014" summary="The alert windows were added.">
+      <created>1552996051331</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1552996051331</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -617,7 +714,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17086835" />
@@ -629,7 +726,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.251821" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38865837" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26279393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -703,27 +800,26 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/windows/Controllers/newBookController.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="The composition of the library window was changed." />
+    <MESSAGE value="The composition of the person window was changed." />
+    <MESSAGE value="A switching between the main window and the library window was added." />
+    <MESSAGE value="The solution of a problem &quot;Copy and paste programming&quot; in the Controller was solved." />
+    <MESSAGE value="The solution of a problem &quot;Copy and paste programming&quot; in the LibraryWinController was solved." />
+    <MESSAGE value="The function newWinButton() was optimized." />
+    <MESSAGE value="The problem @Copy and paste programming&quot; in personWinController was solved." />
+    <MESSAGE value="The switching between the readers window and the registration window was added." />
+    <MESSAGE value="The switching between the readers window and the authorization window was added." />
+    <MESSAGE value="The composition of the registration window and of the authorization window was changed." />
+    <MESSAGE value="he hiding of characters in password fields was added." />
+    <MESSAGE value="The alert window was created." />
+    <MESSAGE value="The alert windows were added." />
+    <option name="LAST_COMMIT_MESSAGE" value="The alert windows were added." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/cssFiles/Images/menu.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/sample/cssFiles/Images/Fon.jpg" />
     <entry file="file://$PROJECT_DIR$/src/sample/cssFiles/Images/menu3.jpg" />
     <entry file="file://$PROJECT_DIR$/src/sample/cssFiles/mainWindow.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -769,14 +865,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/interfaces/ReaderList.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/authorizationWin.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -805,27 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/AuthorizationWinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/com/sun/javafx/event/CompositeEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/newBookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,22 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="309" selection-start-line="13" selection-start-column="247" selection-end-line="13" selection-end-column="309" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/readersWin.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/cssFiles/registrationWin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -874,20 +929,11 @@
       </provider>
     </entry>
     <entry file="uml://JAVA/sample" />
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/newBook.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="267" selection-start-line="8" selection-start-column="267" selection-end-line="8" selection-end-column="267" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="uml://JAVA/sample.dataBaseWorkClasses" />
     <entry file="file://$PROJECT_DIR$/src/sample/workedClasses/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,34 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/libraryListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/RegistrationWin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/LibraryWinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="52" column="89" selection-start-line="52" selection-start-column="89" selection-end-line="52" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Images/1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -959,80 +977,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Configs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Const.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="127" column="80" lean-forward="true" selection-start-line="127" selection-start-column="80" selection-end-line="127" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getDbConnection#0;class#DbHandler#0" />
-            <element signature="method#getUser#0;class#DbHandler#0" />
-            <element signature="method#newBook#0;class#DbHandler#0" />
-            <element signature="method#getAllBooks#0;class#DbHandler#0" />
-            <element signature="method#deleteUser#0;class#DbHandler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/registrationWin.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/libraryListWin.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="5" column="112" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="112" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/libraryWin.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" column="112" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="112" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/registrationWin.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/authorizationWin.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/newBook.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/LibraryWinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="29" column="143" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/libraryListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" column="122" selection-start-line="38" selection-start-column="11" selection-end-line="39" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="229" column="18" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="method#deleteUser#0;class#DbHandler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/RegistrationWin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="71" column="138" selection-start-line="70" selection-start-column="11" selection-end-line="71" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/newBookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/alertWindow.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/ErrorWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/AlertWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/AuthorizationWinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/libraryListWin.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/readersWin.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/dataBaseWorkClasses/Configs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
