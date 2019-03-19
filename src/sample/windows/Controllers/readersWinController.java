@@ -44,7 +44,8 @@ public class readersWinController {
     void initialize()
     {
         out.setOnAction(event -> {
-            out.getScene().getWindow().hide();
+            Controller button = new Controller();
+            button.newWinButton("/sample/windows/FXML's/readersWin.fxml", out, "/sample/cssFiles/personWindow.css",1);
         });
         name.setCellValueFactory(new PropertyValueFactory<User, String>("name"));
         surname.setCellValueFactory(new PropertyValueFactory<User, String>("surname"));
