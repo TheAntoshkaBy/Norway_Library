@@ -6,16 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/windows/Controllers/BookPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/windows/Controllers/PersonPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/windows/FXML's/bookPageWin.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/windows/FXML's/personPageWin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Add Person page and book page while tap on table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/windows/Controllers/libraryListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/Controllers/libraryListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/Controllers/PersonWinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/windows/Controllers/PersonWinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/windows/FXML's/personWindow.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/PersonPageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +96,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/PersonWinController.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="671">
               <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
@@ -157,7 +151,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/personPageWin.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
@@ -172,7 +166,7 @@
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="33" />
+              <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -262,13 +256,13 @@
         <option value="$PROJECT_DIR$/src/sample/windows/Controllers/newBookController.java" />
         <option value="$PROJECT_DIR$/src/sample/dataBaseWorkClasses/DbHandler.java" />
         <option value="$PROJECT_DIR$/src/sample/interfaces/ReadersList.java" />
-        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/PersonPageController.java" />
         <option value="$PROJECT_DIR$/src/sample/windows/Controllers/readersWinController.java" />
         <option value="$PROJECT_DIR$/src/sample/windows/Controllers/libraryListController.java" />
         <option value="$PROJECT_DIR$/src/sample/windows/FXML's/PersonPageWin.fxml" />
         <option value="$PROJECT_DIR$/src/sample/windows/FXML's/bookPageWin.fxml" />
         <option value="$PROJECT_DIR$/src/sample/windows/Controllers/BookPageController.java" />
         <option value="$PROJECT_DIR$/src/sample/windows/FXML's/personPageWin.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/windows/Controllers/PersonPageController.java" />
       </list>
     </option>
   </component>
@@ -423,7 +417,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553021392997" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553022520679" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -568,7 +562,7 @@
       <workItem from="1547726951320" duration="151000" />
       <workItem from="1548167380620" duration="641000" />
       <workItem from="1548249199061" duration="149000" />
-      <workItem from="1553020293186" duration="1074000" />
+      <workItem from="1553020293186" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1543945245539</created>
@@ -577,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543945245539</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Person page and book page while tap on table">
+      <created>1553021537239</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553021537239</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95537000" />
+    <option name="totallyTimeSpent" value="96571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -681,7 +682,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Add Person page and book page while tap on table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Person page and book page while tap on table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -948,7 +950,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/PersonWinController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/personWinController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
           <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
@@ -994,13 +996,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/PersonPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/bookPageWin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/personPageWin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -1014,19 +1022,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/bookPageWin.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/sample/windows/Controllers/PersonPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/windows/FXML's/personPageWin.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
