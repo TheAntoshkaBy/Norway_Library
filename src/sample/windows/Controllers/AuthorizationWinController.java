@@ -27,7 +27,8 @@ public class AuthorizationWinController {
     void initialize(){
 
         out.setOnAction(event -> {
-            out.getScene().getWindow().hide();
+            Controller button = new Controller();
+            button.newWinButton("/sample/windows/FXML's/readersWin.fxml", out, "/sample/cssFiles/personWindow.css",1);
         });
 
         input.setOnAction(event -> {
