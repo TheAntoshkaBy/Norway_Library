@@ -11,7 +11,7 @@ import sample.global.GlobalStatic;
 
 import java.io.IOException;
 
-public class PersonWinController {
+public class personWinController {
 
     @FXML
     private Button readersList;
@@ -26,83 +26,27 @@ public class PersonWinController {
     private Button prevWin;
 
     @FXML
+    Controller button = new Controller();
+
+    @FXML
     void initialize()
     {
-        prevWin.setOnAction(event -> {
-            prevWin.getScene().getWindow().hide();
-
-        });
+        prevWin.setOnAction(event ->
+            button.newWinButton("/sample/windows/FXML's/sample.fxml", prevWin, "/sample/cssFiles/mainWindow.css",1));
 
         registration.setOnAction(event -> {
             if(GlobalStatic.isAuhthorization){
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/windows/FXML's/registrationWin.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-
-            Stage stage = new Stage();
-            Scene scene = new Scene(root);
-            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
-            scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/registrationWin.css").toExternalForm());
-            stage.setScene(scene);
-            stage.showAndWait();
+                button.newWinButton("/sample/windows/FXML's/registrationWin.fxml", registration, "/sample/cssFiles/registrationWin.css",1);
             }else{
                 Shake shake = new Shake(registration);
                 shake.play();
             }
-
-
         });
 
-        avtorization.setOnAction(event -> {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/windows/FXML's/authorizationWin.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
+        avtorization.setOnAction(event ->
+                button.newWinButton("/sample/windows/FXML's/authorizationWin.fxml", avtorization, "/sample/cssFiles/avtorize.css",1));
 
-            Stage stage = new Stage();
-            Scene scene = new Scene(root);
-            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
-            scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/avtorize.css").toExternalForm());
-            stage.setScene(scene);
-            stage.showAndWait();
-
-
-        });
-
-        readersList.setOnAction(event -> {
-          /*  if(GlobalStatic.isAuhthorization){
-                System.out.println("SEEE");
-
-            }else{
-                Shake shake = new Shake(readersList);
-                shake.play();
-            }*/
-
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/windows/FXML's/readersWin.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-
-            Stage stage = new Stage();
-            Scene scene = new Scene(root);
-            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
-            scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/readerList.css").toExternalForm());
-            stage.setScene(scene);
-            stage.showAndWait();
-        });
+        readersList.setOnAction(event ->
+                button.newWinButton("/sample/windows/FXML's/readersWin.fxml", readersList, "/sample/cssFiles/readerList.css",1));
     }
-
 }

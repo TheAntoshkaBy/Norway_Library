@@ -17,11 +17,11 @@
             <Font name="Humnst777 Blk BT Black" size="28.0" />
          </font>
       </Label>
-      <Button fx:id="personWindow" layoutX="326.0" layoutY="649.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Членство">
+      <Button fx:id="personWindow" layoutX="326.0" layoutY="649.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Читатели">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font></Button>
-      <Button fx:id="libraryWindow" layoutX="664.0" layoutY="650.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="133.0" text="Библеотека">
+      <Button fx:id="libraryWindow" layoutX="664.0" layoutY="650.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="133.0" text="Библиотека">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font></Button>
