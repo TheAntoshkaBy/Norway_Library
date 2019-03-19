@@ -27,27 +27,8 @@ public class LibraryWinController {
 
     @FXML
     void initialize(){
-        button.newWinButton("/sample/windows/FXML's/sample.fxml", prevWin, "/sample/cssFiles/mainWindow.css");
-        button.newWinButton("/sample/windows/FXML's/libraryListWin.fxml", bookingList, "/sample/cssFiles/readerList.css");
-        newBook.setOnAction(event -> {
-
-                FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("/sample/windows/FXML's/newBook.fxml"));
-                try {
-                    loader.load();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                Parent root = loader.getRoot();
-
-                Stage stage = new Stage();
-                Scene scene = new Scene(root);
-                stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
-               // scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/readerList.css").toExternalForm());
-                stage.setScene(scene);
-                stage.showAndWait();
-
-        });
-
+        prevWin.setOnAction(event -> button.newWinButton("/sample/windows/FXML's/sample.fxml", prevWin, "/sample/cssFiles/mainWindow.css", 1));
+        bookingList.setOnAction(event -> button.newWinButton("/sample/windows/FXML's/libraryListWin.fxml", bookingList, "/sample/cssFiles/readerList.css", 1));
+        newBook.setOnAction(event ->  button.newWinButton("/sample/windows/FXML's/newBook.fxml", newBook, "/sample/cssFiles/personWindow.css", 0));
     }
 }

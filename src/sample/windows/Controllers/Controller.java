@@ -12,8 +12,9 @@ import java.io.IOException;
 
 public class Controller {
 
-    public void newWinButton(String fxmlPatch, Button button, String cssPatch)
+    public void newWinButton(String fxmlPatch, Button button, String cssPatch, int hideFlag)
     {
+        if(hideFlag==1)
         button.getScene().getWindow().hide();
 
         FXMLLoader loader = new FXMLLoader();
@@ -50,8 +51,8 @@ public class Controller {
 
     @FXML
     void initialize(){
-        personWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/personWindow.fxml", personWindow, "/sample/cssFiles/personWindow.css"));
-        libraryWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/libraryWin.fxml", personWindow, "/sample/cssFiles/personWindow.css"));
+        personWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/personWindow.fxml", personWindow, "/sample/cssFiles/personWindow.css", 1));
+        libraryWindow.setOnAction(event -> newWinButton("/sample/windows/FXML's/libraryWin.fxml", personWindow, "/sample/cssFiles/personWindow.css", 1));
     }
 
 
