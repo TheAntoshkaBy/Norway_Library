@@ -1,11 +1,13 @@
 package sample.windows.Controllers;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import sample.interfaces.impl.DbBookingList;
 import sample.interfaces.impl.DbReaderList;
 import sample.workedClasses.Book;
@@ -52,6 +54,12 @@ public class libraryListController {
 
         label.setText(label.getText() + dbReaderList.getBookingList().size());
 
+        table.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                BookPageController.BookPage();
+            }
+        });
     }
 }
 
