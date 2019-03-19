@@ -118,7 +118,7 @@ public class DbHandler extends Configs{
 
     }
 
-    public ResultSet getAll()
+    public ResultSet getAll()//всех юзеров
     {
         ResultSet resultSet = null;
 
@@ -153,5 +153,48 @@ public class DbHandler extends Configs{
         }
 
         return resultSet;
+    }
+
+    public void deleteUser(Const tableName, Const param)
+    {
+        String delete = "DELETE FROM " + tableName + " WHERE " + param + "VALUES(?)";
+        System.out.println(delete);
+
+        PreparedStatement prStr = null;
+
+        try {
+            prStr.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            prStr = getDbConnection().prepareStatement(delete);
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void ChangeDataAboutUser(User user)
+    {
+        String update = "UPDATE " + Const.USER_TABLE   +     " SET "           +
+                Const.USER_NAME            +    " = "  + user.getName()        +
+                Const.USER_SURNAME         +    " = "  + user.getSurname()     +
+                Const.USER_LOGIN           +    " = "  + user.getLogin()       +
+                Const.USER_NOW_BOOK        +    " = "  + user.getNowBook()     +
+                Const.USER_BOOK_FOR_CLUB   +    " = "  + user.getBookForClub() +
+                Const.USER_MALE            +    " = "  + user.getMale()        +
+                Const.USER_PASSWORD        +    " = "  + user.getPassword()    ;
+
+        PreparedStatement preparedStatement = getDbConnection().prepareStatement(update);
+        try {
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
