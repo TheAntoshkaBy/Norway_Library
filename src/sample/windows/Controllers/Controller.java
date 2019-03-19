@@ -52,9 +52,11 @@ public class Controller {
     void initialize(){
         personWindow.setOnAction(event -> {
             newWinButton("/sample/windows/FXML's/personWindow.fxml",personWindow, "/sample/cssFiles/personWindow.css");
+            personWindow.getScene().getWindow().hide();
 
         });
         libraryWindow.setOnAction(event -> {
+            libraryWindow.getScene().getWindow().hide();
 
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/sample/windows/FXML's/libraryWin.fxml"));
