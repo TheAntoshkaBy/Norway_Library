@@ -28,7 +28,7 @@ public class AuthorizationWinController {
 
         out.setOnAction(event -> {
             Controller button = new Controller();
-            button.newWinButton("/sample/windows/FXML's/readersWin.fxml", out, "/sample/cssFiles/personWindow.css",1);
+            button.newWinButton("/sample/windows/FXML's/personWindow.fxml", out, "/sample/cssFiles/personWindow.css",1);
         });
 
         input.setOnAction(event -> {

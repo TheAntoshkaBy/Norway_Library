@@ -51,7 +51,8 @@ public class RegistrationWin {
     @FXML
     void initialize() {
         out.setOnAction(event -> {
-            out.getScene().getWindow().hide();
+            Controller button = new Controller();
+            button.newWinButton("/sample/windows/FXML's/personWindow.fxml", out, "/sample/cssFiles/personWindow.css",1);
         });
 
         registration.setOnAction(event -> {

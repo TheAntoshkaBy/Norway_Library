@@ -45,7 +45,7 @@ public class readersWinController {
     {
         out.setOnAction(event -> {
             Controller button = new Controller();
-            button.newWinButton("/sample/windows/FXML's/readersWin.fxml", out, "/sample/cssFiles/personWindow.css",1);
+            button.newWinButton("/sample/windows/FXML's/personWindow.fxml", out, "/sample/cssFiles/personWindow.css",1);
         });
         name.setCellValueFactory(new PropertyValueFactory<User, String>("name"));
         surname.setCellValueFactory(new PropertyValueFactory<User, String>("surname"));

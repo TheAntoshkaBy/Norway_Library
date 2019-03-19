@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="1022.0" style="-fx-background-color: #A52A2A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.RegistrationWin">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1110.0" style="-fx-background-color: #A52A2A;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.RegistrationWin">
    <children>
       <TextField fx:id="name" layoutX="148.0" layoutY="112.0" prefHeight="25.0" prefWidth="205.0" promptText="Имя" />
       <TextField fx:id="surname" layoutX="148.0" layoutY="195.0" prefHeight="25.0" prefWidth="205.0" promptText="Фамилия" />
       <TextField fx:id="logIn" layoutX="148.0" layoutY="277.0" prefHeight="25.0" prefWidth="205.0" promptText="Логин" />
-      <TextField fx:id="nowBook" layoutX="692.0" layoutY="112.0" prefHeight="25.0" prefWidth="205.0" promptText="Читаемая книга" />
-      <TextField fx:id="bookForClub" layoutX="692.0" layoutY="195.0" prefHeight="25.0" prefWidth="205.0" promptText="Внесенная книга" />
+      <TextField fx:id="nowBook" layoutX="726.0" layoutY="112.0" prefHeight="25.0" prefWidth="205.0" promptText="Читаемая книга" />
+      <TextField fx:id="bookForClub" layoutX="726.0" layoutY="195.0" prefHeight="25.0" prefWidth="205.0" promptText="Внесенная книга" />
       <CheckBox fx:id="man" layoutX="148.0" layoutY="349.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" text="мужчина" />
       <CheckBox fx:id="wooman" layoutX="148.0" layoutY="387.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" text="женщина" />
       <Button fx:id="out" layoutX="938.0" layoutY="534.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Выход">
          <font>
             <Font name="Microsoft JhengHei UI Light" size="12.0" />
          </font></Button>
-      <Button fx:id="registration" layoutX="409.0" layoutY="474.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Зарегистрироваться">
+      <Button fx:id="registration" layoutX="453.0" layoutY="474.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text="Зарегистрироваться">
          <font>
             <Font name="Microsoft YaHei Light" size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="password" layoutX="692.0" layoutY="277.0" prefHeight="25.0" prefWidth="205.0" promptText="пароль (для администратора)" />
+      <TextField fx:id="password" layoutX="726.0" layoutY="277.0" prefHeight="25.0" prefWidth="205.0" promptText="пароль (для администратора)" />
    </children>
 </AnchorPane>
