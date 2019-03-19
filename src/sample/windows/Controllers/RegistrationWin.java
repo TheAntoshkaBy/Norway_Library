@@ -68,8 +68,10 @@ public class RegistrationWin {
             User user = new User(name.getText(),surname.getText(),logIn.getText(),nowBook.getText(),bookForClub.getText(),maleUs,password.getText());
 
             DbHandler.signUpUser(user);
-            if(DbHandler.getFlag()==0) controller.newWinButton("/sample/windows/FXML's/alertWindow.fxml", registration, "/sample/cssFiles/personWindow.css", 0);
+            if (sample.dataBaseWorkClasses.DbHandler.getFlag() == 0)
+                controller.newWinButton("/sample/windows/FXML's/alertWindow.fxml", registration, "/sample/cssFiles/personWindow.css", 0);
             else controller.newWinButton("/sample/windows/FXML's/ErrorWindow.fxml", registration, "/sample/cssFiles/personWindow.css", 0);
+            controller.newWinButton("/sample/windows/FXML's/libraryWin.fxml", registration, "/sample/cssFiles/personWindow.css", 1);
         });
     }
 

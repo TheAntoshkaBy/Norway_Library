@@ -50,7 +50,7 @@ public class AuthorizationWinController {
                 button.newWinButton("/sample/windows/FXML's/ErrorWindow.fxml", input, "/sample/cssFiles/personWindow.css", 0);
                 System.out.println("Empty");
             }
-
+            button.newWinButton("/sample/windows/FXML's/libraryWin.fxml", input, "/sample/cssFiles/personWindow.css", 1);
         });
     }
 
