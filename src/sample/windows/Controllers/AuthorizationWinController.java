@@ -39,6 +39,8 @@ public class AuthorizationWinController {
             String loginText = login.getText().trim();
             String passText = password.getText().trim();
 
+            button.newWinButton("/sample/windows/FXML's/personWindow.fxml", input, "/sample/cssFiles/personWindow.css", 1);
+
             if(!loginText.isEmpty() && !passText.isEmpty())
             {
                 try {
@@ -50,7 +52,6 @@ public class AuthorizationWinController {
                 button.newWinButton("/sample/windows/FXML's/ErrorWindow.fxml", input, "/sample/cssFiles/personWindow.css", 0);
                 System.out.println("Empty");
             }
-
         });
     }
 
