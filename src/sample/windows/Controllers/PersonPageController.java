@@ -68,7 +68,7 @@ public class PersonPageController {
         ImageView imageView = new ImageView(image);
         imageField.getChildren().addAll(imageView);
     }
-    public static void PersonPage(String name, String surname, String login, String male, String readBook, String reserveBook){
+    public void PersonPage(String name, String surname, String login, String male, String readBook, String reserveBook){
         try {
 
             nameOfField = name;
@@ -81,7 +81,10 @@ public class PersonPageController {
             FXMLLoader fxmlLoader = new FXMLLoader(PersonPageController.class.getResource("/sample/windows/FXML's/personPageWin.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
+            Scene scene = new Scene(root1);
+            scene.getStylesheets().add(getClass().getResource("/sample/cssFiles/readerList.css").toExternalForm());
+            stage.setScene(scene);
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/sample/Images/2.png")));
             stage.show();
         } catch(Exception e) {
             e.printStackTrace();

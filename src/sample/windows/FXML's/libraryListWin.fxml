@@ -7,22 +7,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="965.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.libraryListController">
+<AnchorPane prefHeight="711.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.Controllers.libraryListController">
     <children>
-        <AnchorPane layoutX="-2.0" layoutY="147.0" prefHeight="789.0" prefWidth="867.0">
+        <AnchorPane layoutX="122.0" layoutY="96.0" prefHeight="523.0" prefWidth="877.0">
             <children>
-                <TableView fx:id="table" layoutX="131.0" layoutY="20.0" prefHeight="654.0" prefWidth="621.0">
+                <TableView fx:id="table" layoutX="101.0" layoutY="76.0" prefHeight="372.0" prefWidth="651.0">
                     <columns>
-                        <TableColumn fx:id="name" prefWidth="303.0" text="Книга" />
-                        <TableColumn fx:id="author" prefWidth="317.0" text="Автор" />
+                        <TableColumn fx:id="name" prefWidth="321.0" text="Книга" />
+                        <TableColumn fx:id="author" prefWidth="327.0" text="Автор" />
                     </columns>
                 </TableView>
-                <Label fx:id="label" layoutX="120.0" layoutY="744.0" prefHeight="35.0" prefWidth="199.0" text="Участников: ">
+                <Label fx:id="label" layoutX="101.0" layoutY="460.0" prefHeight="35.0" prefWidth="199.0" text="Участников: ">
                     <font>
                         <Font name="Arimo" size="15.0" />
                     </font>
                 </Label>
-                <Button fx:id="out" layoutX="700.0" layoutY="749.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Выход" />
+                <Button fx:id="out" layoutX="657.0" layoutY="465.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Выход" />
             </children>
         </AnchorPane>
     </children>

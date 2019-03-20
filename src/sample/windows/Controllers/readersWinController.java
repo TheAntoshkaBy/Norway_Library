@@ -81,6 +81,7 @@ public class readersWinController {
         table.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
+                person = new PersonPageController();
                 String name = table.getSelectionModel().getSelectedItem().getName();
                 String surname = table.getSelectionModel().getSelectedItem().getSurname();
                 String login = table.getSelectionModel().getSelectedItem().getLogin();
