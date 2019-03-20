@@ -1,17 +1,25 @@
 package sample.windows.Controllers;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import sample.interfaces.impl.DbReaderList;
 import sample.workedClasses.User;
+
+import java.io.IOException;
 import java.util.ResourceBundle;
 
 import java.sql.SQLException;
@@ -42,6 +50,10 @@ public class readersWinController {
     @FXML
     private Label label;
 
+    private PersonPageController person;
+
+    public static String nameTxt;
+
     @FXML
     void initialize()
     {
@@ -69,7 +81,14 @@ public class readersWinController {
         table.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                PersonPageController.PersonPage();
+                String name = table.getSelectionModel().getSelectedItem().getName();
+                String surname = table.getSelectionModel().getSelectedItem().getSurname();
+                String login = table.getSelectionModel().getSelectedItem().getLogin();
+                String male = table.getSelectionModel().getSelectedItem().getMale();
+                String readBook = table.getSelectionModel().getSelectedItem().getNowBook();
+                String reserve = table.getSelectionModel().getSelectedItem().getBookForClub();
+                person.PersonPage(name, surname, login, male, readBook, reserve);
+
             }
         });
     }
