@@ -12,5 +12,5 @@
 #### Diagrams: [Link](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/README.md)
 
 - Отчет по парному программированию [здесь](documentation/pair_programming.md)
-- Отчет по техническому долгу[здесь](documentation/tech_debt.md)
+- Отчет по техническому долгу [здесь](documentation/tech_debt.md)
 
