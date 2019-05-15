@@ -4,13 +4,14 @@
 
 Архитектура To Be имеет вид:
 
-![](documentation/Untitled.png)
+![alt text](https://github.com/ggnsta/Boking-Club/blob/master/documentation/Untitled.png)
 
 Архитектура As Is имеет вид:
 
-![](documentation/Untitled.png)
+![alt text](https://github.com/ggnsta/Boking-Club/blob/master/documentation/Untitled.png)
 
 Реализованная архитектура не отличается от архитектуры To Be благодаря грамотному планированию.
 ## Диаграмма классов
 
-![](documentation/diagrams/images/ClassDi.jpg)
+
+![alt text](https://github.com/ggnsta/Boking-Club/blob/master/documentation/diagrams/images/ClassDi.jpg)
