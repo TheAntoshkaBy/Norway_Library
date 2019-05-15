@@ -1,7 +1,7 @@
 ## 1. Авторизация
 ### До:
 ![Image alt](https://github.com/ggnsta/Boking-Club/blob/master/documentation/diagrams/images/AUTH.png)
-###После:
+## #После:
 ![Image alt](https://github.com/ggnsta/Boking-Club/blob/master/documentation/diagrams/images/AUTH2.png)
 
 ## 2. Главное меню
