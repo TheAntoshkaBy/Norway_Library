@@ -9,8 +9,9 @@
 ## Документация
 
 #### Software Requirements Specification: [Link](https://github.com/TheAntoshkaBy/Bible_Wiki/blob/master/documentation/SRS.md)
-#### Diagrams: [Link](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/README.md)
-StoryBoard [здесь](https://trello.com/b/uFAf56sG/booking-club)
+#### Diagrams [Link](https://github.com/TheAntoshkaBy/Boking-Club/blob/master/documentation/diagrams/README.md)
+#### StoryBoard [здесь](https://trello.com/b/uFAf56sG/booking-club)
+#### Client-Server [Link](https://github.com/Skindrila/BookingClubCS)
 
 __________________________________________________________________________________
 - Отчет по парному программированию [здесь](documentation/pair_programming.md)
